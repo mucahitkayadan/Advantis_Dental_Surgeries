@@ -1,0 +1,37 @@
+graph TD;
+    subgraph Presentation_Layer
+        UI[User Interface]
+    end
+
+    subgraph Application_Layer
+        Controller[Spring Boot Controller]
+        Service[OfficeManagerService]
+    end
+
+    subgraph Domain_Layer
+        Dentist[Entity: Dentist]
+        Patient[Entity: Patient]
+        Appointment[Entity: Appointment]
+        Surgery[Entity: Surgery]
+    end
+
+    subgraph Persistence_Layer
+        Repository[Spring Data JPA Repository]
+        Database[Database: MySQL/PostgreSQL]
+    end
+
+    UI -->|HTTP Requests| Controller
+    Controller -->|Business Logic| Service
+    Service -->|Domain Objects| Dentist
+    Service -->|Domain Objects| Patient
+    Service -->|Domain Objects| Appointment
+    Service -->|Domain Objects| Surgery
+    Service -->|Data Access| Repository
+    Repository -->|JPA Queries| Database
+
+    classDef tech fill:#f9f,stroke:#333,stroke-width:2px;
+    UI:::tech
+    Controller:::tech
+    Service:::tech
+    Repository:::tech
+    Database:::tech
