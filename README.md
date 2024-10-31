@@ -97,7 +97,7 @@ Advantis Dental Surgeries (ADS) is a comprehensive web-based application designe
 
 2. **Clone Repository**
    ```bash
-   git clone https://github.com/yourusername/ads-dental-system.git
+   git clone https://github.com/mucahitkayadan/Advantis_Dental_Surgeries.git
    cd ads-dental-system
    ```
 
@@ -142,4 +142,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or support, please contact [your-email@example.com](mailto:mujakayadan@outlook.com).
+For any questions or support, please contact [mujakayadan@outlook.com](mailto:mujakayadan@outlook.com).
