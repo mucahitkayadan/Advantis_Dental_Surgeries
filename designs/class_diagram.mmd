@@ -1,0 +1,53 @@
+classDiagram
+    class OfficeManager {
+        +registerDentist()
+        +enrollPatient()
+        +bookAppointment()
+    }
+
+    class Dentist {
+        +String id
+        +String firstName
+        +String lastName
+        +String phoneNumber
+        +String email
+        +String specialization
+        +viewAppointments()
+    }
+
+    class Patient {
+        +String id
+        +String firstName
+        +String lastName
+        +String phoneNumber
+        +String email
+        +String mailingAddress
+        +Date dateOfBirth
+        +requestAppointment()
+        +viewAppointments()
+        +cancelAppointment()
+    }
+
+    class Appointment {
+        +Date date
+        +Time time
+        +confirm()
+    }
+
+    class Surgery {
+        +String name
+        +String address
+        +String phoneNumber
+    }
+
+    class Billing {
+        +checkOutstandingBill()
+    }
+
+    OfficeManager --> Dentist : registers
+    OfficeManager --> Patient : enrolls
+    OfficeManager --> Appointment : books
+    Patient --> Appointment : requests
+    Patient --> Billing : checks
+    Dentist --> Appointment : views
+    Appointment --> Surgery : location

@@ -1,0 +1,12 @@
+1.1 Functional Requirements Discovery
+Based on the problem statement, here are the functional requirements for the ADS system:
+Dentist Registration: The system should allow the Office Manager to register new dentists with a unique ID, first name, last name, contact phone number, email, and specialization.
+2. Patient Enrollment: The system should allow the Office Manager to enroll new patients with their first name, last name, contact phone number, email, mailing address, and date of birth.
+Appointment Request: Patients should be able to request appointments via phone or an online form.
+Appointment Booking: The Office Manager should be able to book appointments and send confirmation emails to patients.
+5. Dentist Appointment View: Dentists should be able to sign in and view their scheduled appointments, including patient details.
+Surgery Information: The system should provide information about each surgery location, including name, address, and telephone number.
+7. Patient Appointment View: Patients should be able to sign in and view their appointments, including dentist information.
+Appointment Management: Patients should be able to request to cancel or change their appointments.
+Appointment Limit: The system should ensure that a dentist does not have more than 5 appointments in any given week.
+10. Billing Check: The system should prevent patients with outstanding unpaid bills from requesting new appointments.
